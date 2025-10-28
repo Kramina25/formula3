@@ -22,10 +22,10 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller --onefile --collect-all pandas --collect-all openpyxl cirurgias_resumo.py
+        pyinstaller --onefile --collect-all pandas --collect-all openpyxl formulacirurgias.py
 
     - name: Upload build artifact
       uses: actions/upload-artifact@v4
       with:
-        name: cirurgias_resumo_exe
-        path: dist/cirurgias_resumo.exe
+        name: formulacirurgias_exe
+        path: dist/formulacirurgias.exe
