@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # 1️⃣ Caminho da pasta onde estão os arquivos Excel
-pasta = "/Users/kristoferramina/phyton test"  # ⬅️ ajuste esse caminho conforme sua pasta
+pasta = os.getcwd()  # ⬅️ ajuste esse caminho conforme sua pasta
 saida = os.path.join(pasta, "Resumo_Cirurgias.xlsx")
 
 # 2️⃣ Listar todos os arquivos Excel
